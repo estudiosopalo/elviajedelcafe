@@ -48,6 +48,46 @@
         </div>
     </div>
 
+    <!--Separador-->
+    <div class="section-divider">
+        <h3 class="divider-title">ENTREVISTA</h3>
+    </div>
+    
+    <!-- Sección de Entrevista -->
+    <section class="entrevista-section">
+        <div class="container">
+            <div class="entrevista-card" onclick="openModal('entrevista')">
+                <div class="entrevista-icon"><img src="img/mic.png" alt="80px" width="80px"></div>
+                <h3>Ver Entrevista Completa</h3>
+                <p>Descubre los secretos del café chiapaneco</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Entrevista -->
+    <div id="modal-entrevista" class="modal">
+        <div class="modal-content modal-content-large">
+            <span class="close" onclick="closeModal('entrevista')">&times;</span>
+            <h2>ENTREVISTA: EL VIAJE DEL CAFÉ</h2>
+            
+            <!-- Video de entrevista -->
+            <div class="video-container-local">
+                <video id="video-entrevista" controls>
+                    <source src="img/entrevista.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            
+            <div class="entrevista-info">
+                <h3>Sobre la entrevista</h3>
+                <p class="modal-description">
+                    En esta entrevista exclusiva, conversamos con parte de Estudios Ópalo 
+                    sobre su proyecto integrador: "El Viaje del Café, en donde nos explican un poco
+                    en como se creo este proyecto. Conoce más sobre este maravilloso proyecto.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- Separador -->
     <div class="section-divider">
@@ -82,13 +122,13 @@
             <div class="modal-carousel" id="carousel-maqueta1">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta1/recoleccion1.JPG" alt="Recolección 1">
+                        <img src="img/maquetas/maqueta1/maq11.jpg" alt="Recolección 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta1/recoleccion2.JPG" alt="Recolección 2">
+                        <img src="img/maquetas/maqueta1/maq12.jpg" alt="Recolección 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta1/recoleccion3.JPG" alt="Recolección 3">
+                        <img src="img/maquetas/maqueta1/maq13.jpg" alt="Recolección 3">
                     </div>
                 </div>
                 <button class="carousel-button prev" onclick="moveCarousel('maqueta1', -1)">‹</button>
@@ -112,13 +152,13 @@
             <div class="modal-carousel" id="carousel-maqueta2">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta2/tostado1.JPG" alt="Tostado 1">
+                        <img src="img/maquetas/maqueta2/maq21.jpg" alt="Tostado 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta2/tostado2.JPG" alt="Tostado 2">
+                        <img src="img/maquetas/maqueta2/maq22.jpg" alt="Tostado 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta2/tostado3.JPG" alt="Tostado 3">
+                        <img src="img/maquetas/maqueta2/maq23.jpg" alt="Tostado 3">
                     </div>
                 </div>
                 <button class="carousel-button prev" onclick="moveCarousel('maqueta2', -1)">‹</button>
@@ -134,6 +174,7 @@
         </div>
     </div> 
 
+    <!-- Modal maqueta3-->
     <div id="modal-maqueta3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('maqueta3')">&times;</span>
@@ -141,13 +182,13 @@
             <div class="modal-carousel" id="carousel-maqueta3">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta3/molido1.JPG" alt="Molido 1">
+                        <img src="img/maquetas/maqueta3/maq31.jpg" alt="Molido 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta3/molido2.JPG" alt="Molido 2">
+                        <img src="img/maquetas/maqueta3/maq32.jpg" alt="Molido 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/maquetas/maqueta3/molido3.JPG" alt="Molido 3">
+                        <img src="img/maquetas/maqueta3/maq33.jpg" alt="Molido 3">
                     </div>
                 </div>
                 <button class="carousel-button prev" onclick="moveCarousel('maqueta3', -1)">‹</button>
@@ -176,42 +217,43 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-circle">
-                        <img src="img/team/miembro1.jpg" alt="Miembro 1" onerror="this.src='img/cafe.png'">
+                        <img src="img/equipo/maria_jose_ruiz.JPG" alt="Miembro 1" onerror="this.src='img/cafe.png'">
                     </div>
-                    <h3 class="team-name">Nombre Apellido</h3>
-                    <p class="team-role">Puesto</p>
+                    <h3 class="team-name">María José Ruiz Sánchez</h3>
+                    <br>
+                    <p class="team-role">Departamento de Programación</p>
                 </div>
 
                 <div class="team-card">
                     <div class="team-circle">
-                        <img src="img/team/miembro2.jpg" alt="Miembro 2" onerror="this.src='img/cafe.png'">
+                        <img src="img/equipo/rocio_hernandez.JPG" alt="Miembro 2" onerror="this.src='img/cafe.png'">
                     </div>
-                    <h3 class="team-name">Nombre Apellido</h3>
-                    <p class="team-role">Puesto</p>
+                    <h3 class="team-name">Rocio Elizabeth Hérnandez Guillen</h3>
+                    <p class="team-role">Departamento de Electrónica</p>
                 </div>
 
                 <div class="team-card">
                     <div class="team-circle">
-                        <img src="img/team/miembro3.jpg" alt="Miembro 3" onerror="this.src='img/cafe.png'">
+                        <img src="img/equipo/ruden_hernandez.JPG" alt="Miembro 3" onerror="this.src='img/cafe.png'">
                     </div>
-                    <h3 class="team-name">Nombre Apellido</h3>
-                    <p class="team-role">Puesto</p>
+                    <h3 class="team-name">Ruden Hedda Hérnandez Becerril</h3>
+                    <p class="team-role">Departamento de Diseño</p>
                 </div>
 
                 <div class="team-card">
                     <div class="team-circle">
-                        <img src="img/team/miembro4.jpg" alt="Miembro 4" onerror="this.src='img/cafe.png'">
+                        <img src="img/equipo/max_alegria.JPG" alt="Miembro 4" onerror="this.src='img/cafe.png'">
                     </div>
-                    <h3 class="team-name">Nombre Apellido</h3>
-                    <p class="team-role">Puesto</p>
+                    <h3 class="team-name">Maximiliano Rámirez Alegría</h3>
+                    <p class="team-role">Departamento de Ilustración</p>
                 </div>
 
                 <div class="team-card">
                     <div class="team-circle">
-                        <img src="img/team/miembro5.jpg" alt="Miembro 5" onerror="this.src='img/cafe.png'">
+                        <img src="img/equipo/emiliano_ricardez.JPG" alt="Miembro 5" onerror="this.src='img/cafe.png'">
                     </div>
-                    <h3 class="team-name">Nombre Apellido</h3>
-                    <p class="team-role">Puesto</p>
+                    <h3 class="team-name">Jose Emiliano Ricardez Leon</h3>
+                    <p class="team-role">Departamento de Animación 3D</p>
                 </div>
             </div>
         </div>
@@ -229,8 +271,8 @@
                 <div class="footer-social">
                     <h4>Síguenos en Redes Sociales</h4>
                     <div class="social-icons">
-                        <a href="#" target="_blank" title="Instagram">
-                            <img src="img/cafe.png" alt="Instagram" width="40">
+                        <a href="https://www.instagram.com/opalo_ch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="" title="Instagram">
+                            <img src="img/inst.png" alt="Instagram" width="40">
                         </a>
                     </div>
                 </div>
@@ -246,27 +288,11 @@
 </body>
 
     <script>
-        function openModal(type) {
-            document.getElementById('modal-' + type).style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal(type) {
-            document.getElementById('modal-' + type).style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Cerrar modal al hacer clic fuera del contenido
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        }
+        // Sistema de carruseles
         const carousels = {
-        'maqueta1': { currentSlide: 0, totalSlides: 3 },
-        'maqueta2': { currentSlide: 0, totalSlides: 3 },
-        'maqueta3': { currentSlide: 0, totalSlides: 3 }
+            'maqueta1': { currentSlide: 0, totalSlides: 3 },
+            'maqueta2': { currentSlide: 0, totalSlides: 3 },
+            'maqueta3': { currentSlide: 0, totalSlides: 3 }
         };
 
         // Inicializar indicadores al cargar la página
@@ -339,13 +365,22 @@
         function closeModal(type) {
             document.getElementById('modal-' + type).style.display = 'none';
             document.body.style.overflow = 'auto';
+            
+            // Detener video LOCAL de entrevista
+            if (type === 'entrevista') {
+                const video = document.getElementById('video-entrevista');
+                if (video) {
+                    video.pause();         // Pausa el video
+                    video.currentTime = 0; // Lo regresa al inicio
+                }
+            }
         }
 
         // Cerrar modal al hacer clic fuera del contenido
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                const modalId = event.target.id.replace('modal-', '');
+                closeModal(modalId);  // ← Esto ya llama a closeModal que detiene el video
             }
         }
     </script>
